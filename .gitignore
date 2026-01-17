@@ -1,15 +1,10 @@
-find . -type f | sort
-exit
-rm .gitignore
-cat > .gitignore << 'EOF'
-# Python кэш
+# Python
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-.Python
 
-# Виртуальное окружение
+# Virtual Environment
 venv/
 .env/
 .venv/
@@ -18,16 +13,9 @@ env/
 # IDE
 .vscode/
 .idea/
-*.swp
-*.swo
 
 # macOS
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
 
-# Логи
+# Logs
 *.log
-logs/
